@@ -9,6 +9,7 @@
 }
 
 *{
+    
     /border : 1px solid black;
 }
 
@@ -22,6 +23,8 @@ h2 {
     font-family: DynaPuff;
     color: #FFF9F0;
     font-size: 40px;
+    margin: 0;
+    padding-top: 10px;
 }
 
 p {
@@ -119,13 +122,14 @@ button:hover {
 
 .row {
     margin: 0 -5px;
+    justify-content : center;
 }
 
 .project {
-    padding: 16px;
     text-align: center;
     background-color: #FFBED8;
-    border-radius : 12px;
+    border-radius : 20px;
+    padding : 0px 10px;
 }
 
 .row:after {
@@ -134,7 +138,13 @@ button:hover {
     clear: both;
 }
 
-
+.illustration {
+    display: flex;
+    object-fit: contain;
+    justify-content : center;
+    aspect-ratio: 16/9;
+    width : 100%;
+}
 
 #footer {
     background-color: #AB668C;
