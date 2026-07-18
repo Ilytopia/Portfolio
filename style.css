@@ -1,0 +1,119 @@
+@font-face {
+    font-family: DynaPuff;
+    src: url(DynaPuff-VariableFont_wdth,wght.ttf);
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(Fredoka-VariableFont_wdth,wght.ttf);
+}
+
+*{
+    /border : 1px solid black;
+}
+
+h1 {
+    font-family: DynaPuff;
+    color: #AB668C;
+    font-size : 48px;
+}
+
+h2 {
+    font-family: DynaPuff;
+    color: #AB668C;
+    font-size: 40px;
+}
+
+p {
+    font-family: Fredoka;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF9F0;
+}
+
+.topnav {
+    position: sticky;
+    height: 100px;
+    width : 100%;
+
+    background-color: #AB668C;
+    color: #FFF9F0;
+
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    z-index : 100;
+}
+
+.section_1-1 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.section_1-3 {
+    display: flex;
+    float: left;
+    width: 33%;
+    height: 100%;
+    justify-content: center;
+}
+
+.section_2-3 {
+    display: flex;
+    float: right;
+    width: 66%;
+    height: 100%;
+    justify-content: center;
+}
+
+button {
+    background-color: #AB668C;
+    color: #FFF9F0;
+    text-align: center;
+    display: inline-block;
+    font-family: DynaPuff;
+    font-size: 24px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #9A4876;
+}
+
+#presentation {
+    background-color: #FFBED8;
+    height: 400px;
+    margin-bottom : 3%;
+    margin-top : 3%;
+}
+
+.avatar {
+    justify-content: center;
+    text-align: center;
+    object-fit: contain;
+
+    z-index: 50;
+}
+
+.avatar:hover {
+    content: url('Loryn_Hi.png');
+}
+.text {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #AB668C;
+}
+
+.footer {
+    background-color: #AB668C;
+    height: 200px;
+    color: #FFF9F0;
+}
