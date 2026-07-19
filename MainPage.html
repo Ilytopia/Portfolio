@@ -7,20 +7,24 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="topnav">
-        <button onclick="window.location.href='#presentation'">
-            Home
-        </button>
-        <button onclick="window.location.href='#projects'">
-            Portfolio
-        </button>
-        <button onclick="window.location.href='#contact'">
-            Contact me
-        </button>
+    <header>
+        <div class="warning_banner">
+            <p id="warning">This website is a work in progress. Please be mindfull of that. :-)</p>
+        </div>
+        <div class="topnav">
+            <button onclick="window.location.href='#presentation'">
+                Home
+            </button>
+            <button onclick="window.location.href='#projects'">
+                Portfolio
+            </button>
+            <button onclick="window.location.href='#contact'">
+                Contact me
+            </button>
+        </div>
     </header>
 
     <div class="page_content">
-
         <div class="section_1-1" id="presentation">
             <div class="section_1-3">
                  <img class="avatar" src="Loryn.png" />
@@ -28,7 +32,7 @@
             <div class="section_2-3">
                 <div class="text">
                     <h1> Loryn Cesur </h1>
-                    <p> Game developer</p>
+                    <h3> Game developer</h3>
                 </div>
             </div>
         </div>
@@ -40,7 +44,7 @@
                     <div class="project" id="projet_1">
                         <h2>Project 1</h2>
                         <img class="illustration" src="Ione_Fanart.png" />
-                        <p>description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
                         <a href="google.com">Google</a>
                     </div>
                 </div>
@@ -66,7 +70,38 @@
         <div class="section_1-1" id="contact">
             <h1> Contact me </h1>
             <div>
-                <p> Le formulaire x) </p>
+                <form action="https://formspree.io/f/xkodrlyr"
+                      method="POST" target="_top">
+                    <div class="section_1-2" id="form_column">
+                        <div class="form" id="form_name">
+                            <label>
+                                Name:
+                                <textarea name="name"></textarea>
+                            </label>
+                        </div>
+                        <div class="form" id="form_email">
+                            <label>
+                                Email:
+                                <input type="email" name="email">
+                            </label>
+                        </div>
+                        <div class="form" id="form_subject">
+                            <label>
+                                Subject:
+                                <textarea name="subject"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="section_1-2">
+                        <label>
+                            Message:
+                            <textarea name="message"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
