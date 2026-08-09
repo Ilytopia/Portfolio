@@ -69,37 +69,39 @@
 
         <div class="section_1-1" id="contact">
             <h1> Contact me </h1>
-            <div>
+            <div id="form_contact_me">
                 <form action="https://formspree.io/f/xkodrlyr"
                       method="POST" target="_top">
-                    <div class="section_1-2" id="form_column">
+                    <div class="section_2-5" id="form_column">
                         <div class="form" id="form_name">
                             <label>
                                 Name:
-                                <textarea name="name"></textarea>
+                                <input type="text" name="name" required placeholder="Jane Doe" maxlength="35"></input>
                             </label>
                         </div>
                         <div class="form" id="form_email">
                             <label>
                                 Email:
-                                <input type="email" name="email">
+                                <input type="email" name="email" required placeholder="exemple@mail.com" maxlength="50">
                             </label>
                         </div>
                         <div class="form" id="form_subject">
                             <label>
                                 Subject:
-                                <textarea name="subject"></textarea>
+                                <input type="text" name="subject" placeholder="What you wanna talk about" maxlength="50"></input>
                             </label>
                         </div>
                     </div>
-                    <div class="section_1-2">
-                        <label>
-                            Message:
-                            <textarea name="message"></textarea>
-                        </label>
-                    </div>
-                    <div>
-                        <button type="submit">Send</button>
+                    <div class="section_3-5" id="message-submit">
+                        <div class="form" id="form_message">
+                            <label>
+                                Message:
+                                <textarea name="message" id="form_message_textarea" required placeholder="Your message"></textarea>
+                            </label>
+                        </div>
+                        <div class="form" id="form_submit">
+                            <button type="submit" id="form_submit_button">Send</button>
+                        </div>
                     </div>
                 </form>
             </div>

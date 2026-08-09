@@ -74,20 +74,14 @@ header{
     margin-top: 3%;
 }
 
-.section_1-2 {
-    display: flex;
-    float: left;
-    width: 49%;
-    height: 100%;
-    justify-content: center;
-}
-
 .section_1-3 {
     display: flex;
     float: left;
     width: 33%;
     height: 100%;
     justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .section_2-3 {
@@ -96,6 +90,26 @@ header{
     width: 66%;
     height: 100%;
     justify-content: center;
+    flex-direction: column;
+    flex-grow:1;
+}
+
+.section_2-5 {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.section_3-5 {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 #warning {
@@ -126,6 +140,7 @@ button {
     background-color: #FFBED8;
     height: 400px;
     scroll-margin-top: 200px;
+    display: flex;
 }
 
 .avatar {
@@ -139,6 +154,7 @@ button {
 .avatar:hover {
     content: url('Loryn_Hi.png');
 }
+
 .text {
     margin: auto;
     justify-content: center;
@@ -192,26 +208,76 @@ button {
     scroll-margin-top: 130px;
 }
 
-#form_column{
-    justify-content: center;
+#form_contact_me{
+    
 }
 
 form {
     font-family: DynaPuff;
     color: #932568;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.form {
+    width: 90%;
+}
+
+label {
+    font-size: 24px;
+    margin: 5px;
 }
 
 textarea, input {
     font-family: Fredoka;
+    font-size: 20px;
     background-color: #FFBED8;
     color: #932568;
     width: 100%;
-    border:none;
-    padding:0.4rem;
+    border: none;
+    padding: 1rem;
+    resize: none;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+input{
+    text-overflow: ellipsis;
+}
+
+#message-submit{
+    margin: 0 15px;
+    display: flex;
+    height:auto;
+}
+
+#form_message{
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+#form_message_textarea{
+    height:70%;
+}
+
+#form_submit {
+    margin: auto;
+    width: auto;
+}
+
+#form_submit_button {
+    padding: 1rem;
+    border-radius: 5px;
+    justify-self: center;
+    margin-bottom: 25px;
 }
 
 #footer {
     background-color: #932568;
     height: 200px;
     color: #FFF9F0;
+
+    /plan du site
+    /lien vers réseaux intéressant (github, artstation, linkedin)
 }
