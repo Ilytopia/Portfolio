@@ -38,6 +38,16 @@ h3 {
     font-weight: normal;
 }
 
+h4 {
+    font-family: Fredoka;
+    color: #932568;
+    font-size: 22px;
+    margin: 0;
+    padding-top: 0px;
+    font-weight: normal;
+    padding-top: 0px;
+}
+
 p {
     font-family: Fredoka;
     font-size: 18px;
@@ -132,9 +142,18 @@ button {
     border: none;
 }
 
-    button:hover {
-        background-color: #811657;
-    }
+button:hover {
+    background-color: #811657;
+}
+
+.sidebar_socials {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    background-color: #932568;
+    padding: 0.4rem;
+    border-radius: 5px 0 0 5px;
+}
 
 #presentation {
     background-color: #FFBED8;
@@ -160,6 +179,10 @@ button {
     justify-content: center;
     text-align: center;
     color: #932568;
+}
+
+#presentation_name{
+    margin-bottom: 0px;
 }
 
 #projects {
@@ -275,9 +298,16 @@ input{
 
 #footer {
     background-color: #932568;
-    height: 200px;
+    padding: 1rem 20%;
+    display: flex;
     color: #FFF9F0;
-
-    /plan du site
+    justify-content: space-between;
     /lien vers réseaux intéressant (github, artstation, linkedin)
+}
+
+.social_media{
+    margin-right: 1%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
