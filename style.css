@@ -13,11 +13,6 @@
     color: #FFF9F0;
 }
 
-*{
-    
-    /border : 1px solid black;
-}
-
 h1 {
     font-family: DynaPuff;
     color: #932568;
@@ -147,12 +142,19 @@ button:hover {
 }
 
 .sidebar_socials {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 40%;
     background-color: #932568;
-    padding: 0.4rem;
     border-radius: 5px 0 0 5px;
+    padding-top: 0.4rem;
+}
+
+#github_link_sidebar, #linkedin_link_sidebar{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #presentation {
@@ -231,10 +233,6 @@ button:hover {
     scroll-margin-top: 130px;
 }
 
-#form_contact_me{
-    
-}
-
 form {
     font-family: DynaPuff;
     color: #932568;
@@ -302,12 +300,15 @@ input{
     display: flex;
     color: #FFF9F0;
     justify-content: space-between;
-    /lien vers réseaux intéressant (github, artstation, linkedin)
+    /*lien vers réseaux intéressant (github, artstation, linkedin)*/
 }
 
 .social_media{
     margin-right: 1%;
     display: flex;
-    gap: 5px;
     align-items: center;
+}
+
+.linkedin_link{
+    padding: 15px;
 }
